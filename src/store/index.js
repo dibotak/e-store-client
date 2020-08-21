@@ -92,9 +92,9 @@ export default new Vuex.Store({
           console.log('fetch cart completed');
         });
     },
-    addCart({ state }, { ProductId, amount }) {
+    addCart({ state }, { id, amount }) {
       return Api.post('/cart', {
-        ProductId,
+        ProductId: id,
         amount,
       }, {
         headers: {

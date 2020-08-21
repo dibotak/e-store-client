@@ -17,7 +17,7 @@ export default {
     return {
       ProductId: this.$route.params.id,
       stock: null,
-      amount: 0,
+      amount: 1,
     };
   },
   methods: {
